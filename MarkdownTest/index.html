@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Markdown Editor — WYSIWYG</title>
+  <style>
+    html, body { margin: 0; height: 100%; overflow: hidden; background: #fff; }
+    #out { position: absolute; inset: 0; }
+    #loading {
+      position: absolute; inset: 0;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      gap: 14px; color: #57606B;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    #loading .ring {
+      width: 34px; height: 34px; border-radius: 50%;
+      border: 3px solid #E3E7EB; border-top-color: #0B5CCC;
+      animation: spin 0.9s linear infinite;
+    }
+    #loading .hint { font-size: 13px; color: #8A929C; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  </style>
+</head>
+<body>
+  <div id="out"></div>
+
+  <div id="loading">
+    <div class="ring"></div>
+    <div>Loading the editor…</div>
+    <div class="hint">Several megabytes of WebAssembly — the first load takes a moment.</div>
+  </div>
+
+  <script>
+    // Avalonia mounts its canvas into #out; clear the placeholder as soon as that happens.
+    (function () {
+      var out = document.getElementById('out');
+      var loading = document.getElementById('loading');
+      new MutationObserver(function (_, observer) {
+        if (out.childElementCount > 0) { loading.remove(); observer.disconnect(); }
+      }).observe(out, { childList: true, subtree: true });
+    })();
+  </script>
+
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
