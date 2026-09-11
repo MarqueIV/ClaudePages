@@ -1,7 +1,7 @@
 export const config = /*json-start*/{
   "mainAssemblyName": "MarkdownEditor.Browser.dll",
   "resources": {
-    "hash": "sha256-wEUit0gu1kNp4PKpyv62deyUTDSih4o4PzsF78cLcmY=",
+    "hash": "sha256-cmbTVGkBJItyVH5BRuS+Rk1nGPbkHTH+NFJTPkFIbMw=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.js"
@@ -66,7 +66,7 @@ export const config = /*json-start*/{
       {
         "virtualPath": "Avalonia.Controls.wasm",
         "name": "Avalonia.Controls.wasm",
-        "hash": "sha256-cKsqnH0nwetzU1VguakIVrUxmE36r9LGL5lILKuXBos="
+        "hash": "sha256-XoqBpjnJu4SWB4tFSq/NQ+SFjrB+kaYz5IqzBhL/630="
       },
       {
         "virtualPath": "Avalonia.Dialogs.wasm",
@@ -126,12 +126,12 @@ export const config = /*json-start*/{
       {
         "virtualPath": "MarkdownEditor.Browser.wasm",
         "name": "MarkdownEditor.Browser.wasm",
-        "hash": "sha256-wqJJdhiMyZvZGD/9Z7EN0ry3wQ2T9teZysSE7vDVkf8="
+        "hash": "sha256-Si5NAm/wWF85XPQlUzZebliEcpzCjPP+9Rog5JRkev8="
       },
       {
         "virtualPath": "MarkdownEditor.Core.wasm",
         "name": "MarkdownEditor.Core.wasm",
-        "hash": "sha256-RVbFtvCXtYoCWZsqSFLYZA0rZUgWVH9mxBhT9ahEoLk="
+        "hash": "sha256-xAptfI5W+R/tQ8dwX9HVbdmBV6GHlStal/34+5C0CoE="
       },
       {
         "virtualPath": "SkiaSharp.wasm",
