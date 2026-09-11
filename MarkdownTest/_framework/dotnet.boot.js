@@ -1,7 +1,7 @@
 export const config = /*json-start*/{
   "mainAssemblyName": "MarkdownEditor.Browser.dll",
   "resources": {
-    "hash": "sha256-JysshtpkO/7vB4I+LreSXXpbDnNCu9njSJnR5MspUuk=",
+    "hash": "sha256-isnFU/J1MA3ddSP8hy1IXerwBNQoofPUsU1A+uorqBg=",
     "jsModuleNative": [
       {
         "name": "dotnet.native.js"
@@ -126,12 +126,12 @@ export const config = /*json-start*/{
       {
         "virtualPath": "MarkdownEditor.Browser.wasm",
         "name": "MarkdownEditor.Browser.wasm",
-        "hash": "sha256-looVt8E80RSo3t+4PRh4l+c3oMQSluSbUEOUhgRcHm0="
+        "hash": "sha256-HTm8xNKNr9eb/h9cLPSrKXrMZHsoxd36kPqodeAGpGk="
       },
       {
         "virtualPath": "MarkdownEditor.Core.wasm",
         "name": "MarkdownEditor.Core.wasm",
-        "hash": "sha256-nhJNkBFYy2ZREmhjWO3XtfFHD5HOFbIQ3TJSxVssoZU="
+        "hash": "sha256-Dol1Q6PBMtSNFurytrqAqFm9vzl2vU6gNTNAHd+1hTU="
       },
       {
         "virtualPath": "SkiaSharp.wasm",
